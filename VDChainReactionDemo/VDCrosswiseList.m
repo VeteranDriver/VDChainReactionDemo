@@ -18,7 +18,7 @@
 
 @implementation VDCrosswiseList
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"VDCrosswiseListCell";
 
 - (instancetype)initWithItemNumber:(NSInteger)itemNumber {
     

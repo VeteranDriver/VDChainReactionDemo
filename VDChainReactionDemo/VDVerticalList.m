@@ -8,9 +8,6 @@
 
 #import "VDVerticalList.h"
 
-#define ItemHeight 50
-
-
 @interface VDVerticalList ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, assign) NSInteger itemNumber;
@@ -19,20 +16,19 @@
 
 @implementation VDVerticalList
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"VDVerticalListCell";
 
 
-- (instancetype)initWithItemNumber:(NSInteger)itemNumber {
+- (instancetype)initWithItemNumber:(NSInteger)itemNumber ItemWidth:(CGFloat)itemWidth {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.itemSize = CGSizeMake(ItemHeight, ItemHeight);
+    layout.itemSize = CGSizeMake(itemWidth, itemWidth);
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
     if (self = [super initWithFrame:CGRectZero collectionViewLayout:layout]) {
         
-        self.frame = CGRectMake(20, 20, ItemHeight, ItemHeight * itemNumber);
         self.itemNumber = itemNumber;
         self.dataSource = self;
         self.delegate = self;

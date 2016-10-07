@@ -19,6 +19,6 @@
 @property (nonatomic, weak) id<VDVerticalListDelegate> VDVerticalListDelegate;
 
 
-- (instancetype)initWithItemNumber:(NSInteger)itemNumber;
+- (instancetype)initWithItemNumber:(NSInteger)itemNumber ItemWidth:(CGFloat)itemWidth;
 
 @end
