@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B93C44E1DA66C6E0036AA5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C44D1DA66C6E0036AA5E /* main.m */; };
+		3B93C4511DA66C6E0036AA5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4501DA66C6E0036AA5E /* AppDelegate.m */; };
+		3B93C4541DA66C6E0036AA5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4531DA66C6E0036AA5E /* ViewController.m */; };
+		3B93C4571DA66C6E0036AA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B93C4551DA66C6E0036AA5E /* Main.storyboard */; };
+		3B93C4591DA66C6E0036AA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B93C4581DA66C6E0036AA5E /* Assets.xcassets */; };
+		3B93C45C1DA66C6E0036AA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B93C45A1DA66C6E0036AA5E /* LaunchScreen.storyboard */; };
+		3B93C4671DA66C6F0036AA5E /* VDChainReactionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4661DA66C6F0036AA5E /* VDChainReactionDemoTests.m */; };
+		3B93C4721DA66C6F0036AA5E /* VDChainReactionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4711DA66C6F0036AA5E /* VDChainReactionDemoUITests.m */; };
+		3B93C4811DA66CE20036AA5E /* VDVerticalList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4801DA66CE20036AA5E /* VDVerticalList.m */; };
+		3B93C4841DA66D080036AA5E /* VDCrosswiseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4831DA66D080036AA5E /* VDCrosswiseList.m */; };
+		3B93C4871DA66E680036AA5E /* VDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4861DA66E680036AA5E /* VDDisplayView.m */; };
+		3B93C48A1DA66E8C0036AA5E /* VDDisplayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B93C4891DA66E8C0036AA5E /* VDDisplayViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B93C4631DA66C6F0036AA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B93C4411DA66C6E0036AA5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B93C4481DA66C6E0036AA5E;
+			remoteInfo = VDChainReactionDemo;
+		};
+		3B93C46E1DA66C6F0036AA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B93C4411DA66C6E0036AA5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B93C4481DA66C6E0036AA5E;
+			remoteInfo = VDChainReactionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B93C4491DA66C6E0036AA5E /* VDChainReactionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDChainReactionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B93C44D1DA66C6E0036AA5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B93C44F1DA66C6E0036AA5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B93C4501DA66C6E0036AA5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B93C4521DA66C6E0036AA5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3B93C4531DA66C6E0036AA5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B93C4561DA66C6E0036AA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B93C4581DA66C6E0036AA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B93C45B1DA66C6E0036AA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B93C45D1DA66C6E0036AA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B93C4621DA66C6F0036AA5E /* VDChainReactionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDChainReactionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B93C4661DA66C6F0036AA5E /* VDChainReactionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDChainReactionDemoTests.m; sourceTree = "<group>"; };
+		3B93C4681DA66C6F0036AA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B93C46D1DA66C6F0036AA5E /* VDChainReactionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDChainReactionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B93C4711DA66C6F0036AA5E /* VDChainReactionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDChainReactionDemoUITests.m; sourceTree = "<group>"; };
+		3B93C4731DA66C6F0036AA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B93C47F1DA66CE20036AA5E /* VDVerticalList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDVerticalList.h; sourceTree = "<group>"; };
+		3B93C4801DA66CE20036AA5E /* VDVerticalList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDVerticalList.m; sourceTree = "<group>"; };
+		3B93C4821DA66D080036AA5E /* VDCrosswiseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDCrosswiseList.h; sourceTree = "<group>"; };
+		3B93C4831DA66D080036AA5E /* VDCrosswiseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDCrosswiseList.m; sourceTree = "<group>"; };
+		3B93C4851DA66E680036AA5E /* VDDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDisplayView.h; sourceTree = "<group>"; };
+		3B93C4861DA66E680036AA5E /* VDDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDisplayView.m; sourceTree = "<group>"; };
+		3B93C4881DA66E8C0036AA5E /* VDDisplayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDisplayViewCell.h; sourceTree = "<group>"; };
+		3B93C4891DA66E8C0036AA5E /* VDDisplayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDisplayViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B93C4461DA66C6E0036AA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B93C45F1DA66C6F0036AA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B93C46A1DA66C6F0036AA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B93C4401DA66C6E0036AA5E = {
+			isa = PBXGroup;
+			children = (
+				3B93C44B1DA66C6E0036AA5E /* VDChainReactionDemo */,
+				3B93C4651DA66C6F0036AA5E /* VDChainReactionDemoTests */,
+				3B93C4701DA66C6F0036AA5E /* VDChainReactionDemoUITests */,
+				3B93C44A1DA66C6E0036AA5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B93C44A1DA66C6E0036AA5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B93C4491DA66C6E0036AA5E /* VDChainReactionDemo.app */,
+				3B93C4621DA66C6F0036AA5E /* VDChainReactionDemoTests.xctest */,
+				3B93C46D1DA66C6F0036AA5E /* VDChainReactionDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B93C44B1DA66C6E0036AA5E /* VDChainReactionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3B93C44F1DA66C6E0036AA5E /* AppDelegate.h */,
+				3B93C4501DA66C6E0036AA5E /* AppDelegate.m */,
+				3B93C4521DA66C6E0036AA5E /* ViewController.h */,
+				3B93C4531DA66C6E0036AA5E /* ViewController.m */,
+				3B93C47F1DA66CE20036AA5E /* VDVerticalList.h */,
+				3B93C4801DA66CE20036AA5E /* VDVerticalList.m */,
+				3B93C4821DA66D080036AA5E /* VDCrosswiseList.h */,
+				3B93C4831DA66D080036AA5E /* VDCrosswiseList.m */,
+				3B93C4851DA66E680036AA5E /* VDDisplayView.h */,
+				3B93C4861DA66E680036AA5E /* VDDisplayView.m */,
+				3B93C4881DA66E8C0036AA5E /* VDDisplayViewCell.h */,
+				3B93C4891DA66E8C0036AA5E /* VDDisplayViewCell.m */,
+				3B93C4551DA66C6E0036AA5E /* Main.storyboard */,
+				3B93C4581DA66C6E0036AA5E /* Assets.xcassets */,
+				3B93C45A1DA66C6E0036AA5E /* LaunchScreen.storyboard */,
+				3B93C45D1DA66C6E0036AA5E /* Info.plist */,
+				3B93C44C1DA66C6E0036AA5E /* Supporting Files */,
+			);
+			path = VDChainReactionDemo;
+			sourceTree = "<group>";
+		};
+		3B93C44C1DA66C6E0036AA5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B93C44D1DA66C6E0036AA5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B93C4651DA66C6F0036AA5E /* VDChainReactionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B93C4661DA66C6F0036AA5E /* VDChainReactionDemoTests.m */,
+				3B93C4681DA66C6F0036AA5E /* Info.plist */,
+			);
+			path = VDChainReactionDemoTests;
+			sourceTree = "<group>";
+		};
+		3B93C4701DA66C6F0036AA5E /* VDChainReactionDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B93C4711DA66C6F0036AA5E /* VDChainReactionDemoUITests.m */,
+				3B93C4731DA66C6F0036AA5E /* Info.plist */,
+			);
+			path = VDChainReactionDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B93C4481DA66C6E0036AA5E /* VDChainReactionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B93C4761DA66C6F0036AA5E /* Build configuration list for PBXNativeTarget "VDChainReactionDemo" */;
+			buildPhases = (
+				3B93C4451DA66C6E0036AA5E /* Sources */,
+				3B93C4461DA66C6E0036AA5E /* Frameworks */,
+				3B93C4471DA66C6E0036AA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VDChainReactionDemo;
+			productName = VDChainReactionDemo;
+			productReference = 3B93C4491DA66C6E0036AA5E /* VDChainReactionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B93C4611DA66C6F0036AA5E /* VDChainReactionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B93C4791DA66C6F0036AA5E /* Build configuration list for PBXNativeTarget "VDChainReactionDemoTests" */;
+			buildPhases = (
+				3B93C45E1DA66C6F0036AA5E /* Sources */,
+				3B93C45F1DA66C6F0036AA5E /* Frameworks */,
+				3B93C4601DA66C6F0036AA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B93C4641DA66C6F0036AA5E /* PBXTargetDependency */,
+			);
+			name = VDChainReactionDemoTests;
+			productName = VDChainReactionDemoTests;
+			productReference = 3B93C4621DA66C6F0036AA5E /* VDChainReactionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B93C46C1DA66C6F0036AA5E /* VDChainReactionDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B93C47C1DA66C6F0036AA5E /* Build configuration list for PBXNativeTarget "VDChainReactionDemoUITests" */;
+			buildPhases = (
+				3B93C4691DA66C6F0036AA5E /* Sources */,
+				3B93C46A1DA66C6F0036AA5E /* Frameworks */,
+				3B93C46B1DA66C6F0036AA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B93C46F1DA66C6F0036AA5E /* PBXTargetDependency */,
+			);
+			name = VDChainReactionDemoUITests;
+			productName = VDChainReactionDemoUITests;
+			productReference = 3B93C46D1DA66C6F0036AA5E /* VDChainReactionDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B93C4411DA66C6E0036AA5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VD;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = by;
+				TargetAttributes = {
+					3B93C4481DA66C6E0036AA5E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3B93C4611DA66C6F0036AA5E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3B93C4481DA66C6E0036AA5E;
+					};
+					3B93C46C1DA66C6F0036AA5E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3B93C4481DA66C6E0036AA5E;
+					};
+				};
+			};
+			buildConfigurationList = 3B93C4441DA66C6E0036AA5E /* Build configuration list for PBXProject "VDChainReactionDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B93C4401DA66C6E0036AA5E;
+			productRefGroup = 3B93C44A1DA66C6E0036AA5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B93C4481DA66C6E0036AA5E /* VDChainReactionDemo */,
+				3B93C4611DA66C6F0036AA5E /* VDChainReactionDemoTests */,
+				3B93C46C1DA66C6F0036AA5E /* VDChainReactionDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B93C4471DA66C6E0036AA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B93C45C1DA66C6E0036AA5E /* LaunchScreen.storyboard in Resources */,
+				3B93C4591DA66C6E0036AA5E /* Assets.xcassets in Resources */,
+				3B93C4571DA66C6E0036AA5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B93C4601DA66C6F0036AA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B93C46B1DA66C6F0036AA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B93C4451DA66C6E0036AA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B93C4541DA66C6E0036AA5E /* ViewController.m in Sources */,
+				3B93C4511DA66C6E0036AA5E /* AppDelegate.m in Sources */,
+				3B93C4841DA66D080036AA5E /* VDCrosswiseList.m in Sources */,
+				3B93C44E1DA66C6E0036AA5E /* main.m in Sources */,
+				3B93C4811DA66CE20036AA5E /* VDVerticalList.m in Sources */,
+				3B93C48A1DA66E8C0036AA5E /* VDDisplayViewCell.m in Sources */,
+				3B93C4871DA66E680036AA5E /* VDDisplayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B93C45E1DA66C6F0036AA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B93C4671DA66C6F0036AA5E /* VDChainReactionDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B93C4691DA66C6F0036AA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B93C4721DA66C6F0036AA5E /* VDChainReactionDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B93C4641DA66C6F0036AA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B93C4481DA66C6E0036AA5E /* VDChainReactionDemo */;
+			targetProxy = 3B93C4631DA66C6F0036AA5E /* PBXContainerItemProxy */;
+		};
+		3B93C46F1DA66C6F0036AA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B93C4481DA66C6E0036AA5E /* VDChainReactionDemo */;
+			targetProxy = 3B93C46E1DA66C6F0036AA5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B93C4551DA66C6E0036AA5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B93C4561DA66C6E0036AA5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B93C45A1DA66C6E0036AA5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B93C45B1DA66C6E0036AA5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B93C4741DA66C6F0036AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B93C4751DA66C6F0036AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B93C4771DA66C6F0036AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VDChainReactionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.by.VDChainReactionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B93C4781DA66C6F0036AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VDChainReactionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.by.VDChainReactionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B93C47A1DA66C6F0036AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VDChainReactionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.by.VDChainReactionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VDChainReactionDemo.app/VDChainReactionDemo";
+			};
+			name = Debug;
+		};
+		3B93C47B1DA66C6F0036AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VDChainReactionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.by.VDChainReactionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VDChainReactionDemo.app/VDChainReactionDemo";
+			};
+			name = Release;
+		};
+		3B93C47D1DA66C6F0036AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VDChainReactionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.by.VDChainReactionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VDChainReactionDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3B93C47E1DA66C6F0036AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VDChainReactionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.by.VDChainReactionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VDChainReactionDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B93C4441DA66C6E0036AA5E /* Build configuration list for PBXProject "VDChainReactionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B93C4741DA66C6F0036AA5E /* Debug */,
+				3B93C4751DA66C6F0036AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B93C4761DA66C6F0036AA5E /* Build configuration list for PBXNativeTarget "VDChainReactionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B93C4771DA66C6F0036AA5E /* Debug */,
+				3B93C4781DA66C6F0036AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B93C4791DA66C6F0036AA5E /* Build configuration list for PBXNativeTarget "VDChainReactionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B93C47A1DA66C6F0036AA5E /* Debug */,
+				3B93C47B1DA66C6F0036AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B93C47C1DA66C6F0036AA5E /* Build configuration list for PBXNativeTarget "VDChainReactionDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B93C47D1DA66C6F0036AA5E /* Debug */,
+				3B93C47E1DA66C6F0036AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B93C4411DA66C6E0036AA5E /* Project object */;
+}
