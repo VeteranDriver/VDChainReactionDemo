@@ -8,8 +8,6 @@
 
 #import "VDCrosswiseList.h"
 
-#define ItemHeight 30
-#define kMainWidth [UIScreen mainScreen].bounds.size.width
 @interface VDCrosswiseList ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, assign) NSInteger itemNumber;
@@ -20,17 +18,17 @@
 
 static NSString * const reuseIdentifier = @"VDCrosswiseListCell";
 
-- (instancetype)initWithItemNumber:(NSInteger)itemNumber {
+- (instancetype)initWithItemNumber:(NSInteger)itemNumber Size:(CGSize)size{
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.itemSize = CGSizeMake((kMainWidth - 110) / itemNumber, ItemHeight);
+    layout.itemSize = CGSizeMake(size.width / itemNumber, size.height);
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
     if (self = [super initWithFrame:CGRectZero collectionViewLayout:layout]) {
         
-        self.frame = CGRectMake(0, 0, kMainWidth - 110, ItemHeight);
+        self.frame = CGRectMake(0, 0, size.width, size.height);
         self.itemNumber = itemNumber;
         self.dataSource = self;
         self.delegate = self;

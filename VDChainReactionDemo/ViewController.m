@@ -11,9 +11,11 @@
 #import "VDDisplayView.h"
 #import "Masonry.h"
 
-
+#define KMargin 20
 #define VerticalListItemWidth 50
 #define VerticalListItemNumber 10
+#define KMainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KMainScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<VDVerticalListDelegate>
 
 @property (nonatomic,strong) VDDisplayView *displayView;
@@ -29,6 +31,7 @@
     
     [self.view addSubview:self.displayView];
     [self.view addSubview:self.verticalList];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -36,12 +39,18 @@
     
     [self.verticalList mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.top.mas_equalTo(20);
+        make.left.top.mas_equalTo(KMargin);
         make.width.mas_equalTo(VerticalListItemWidth);
         make.height.mas_equalTo(VerticalListItemWidth * VerticalListItemNumber);
     }];
     
-    
+    [self.displayView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.mas_equalTo(KMargin);
+        make.left.mas_equalTo(self.verticalList.mas_right).offset(20);
+        make.right.mas_equalTo(-KMargin);
+        make.bottom.mas_equalTo(-KMargin);
+    }];
 }
 
 #pragma mark VDVerticalListDelegate
@@ -66,7 +75,7 @@
 - (VDDisplayView *)displayView{
     
     if (_displayView == nil) {
-        _displayView = [[VDDisplayView alloc] initWithItemNumber:VerticalListItemNumber];
+        _displayView = [[VDDisplayView alloc] initWithItemNumber:VerticalListItemNumber ItemSize:CGSizeMake(KMainScreenWidth - VerticalListItemWidth - KMargin * 3, KMainScreenHeight - KMargin * 2)];
     }
     return _displayView;
 }

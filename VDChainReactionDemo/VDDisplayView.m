@@ -17,23 +17,23 @@
 @property (nonatomic, assign) NSInteger itemNumber;
 @property (nonatomic, strong) UITableView *tableView;
 
+
 @end
 
 @implementation VDDisplayView
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"VDDisplayViewCell";
 
-- (instancetype)initWithItemNumber:(NSInteger)itemNumber {
+- (instancetype)initWithItemNumber:(NSInteger)itemNumber ItemSize:(CGSize)itemSize{
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.itemSize = CGSizeMake(kMainWidth - 110, ItemHeight);
+    
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    
+    layout.itemSize = itemSize;
     if (self = [super initWithFrame:CGRectZero collectionViewLayout:layout]) {
-        
-        self.frame = CGRectMake(90, 20, kMainWidth - 110, ItemHeight);
+    
         self.scrollEnabled = NO;
         self.itemNumber = itemNumber;
         self.dataSource = self;
@@ -46,7 +46,12 @@ static NSString * const reuseIdentifier = @"Cell";
     return self;
 }
 
-
+- (void)layoutSubviews {
+    
+    [super layoutSubviews];
+    
+    
+}
 
 #pragma mark <UICollectionViewDataSource>
 

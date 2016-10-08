@@ -18,7 +18,7 @@
 
 @property (nonatomic, weak) id<VDCrosswiseListDelegate> VDCrosswiseListDelegate;
 
-- (instancetype)initWithItemNumber:(NSInteger)itemNumber;
+- (instancetype)initWithItemNumber:(NSInteger)itemNumber Size:(CGSize)size;
 
 @end
 

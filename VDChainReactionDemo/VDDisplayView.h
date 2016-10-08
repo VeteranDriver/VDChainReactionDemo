@@ -10,6 +10,6 @@
 
 @interface VDDisplayView : UICollectionView
 
-- (instancetype)initWithItemNumber:(NSInteger)itemNumber;
+- (instancetype)initWithItemNumber:(NSInteger)itemNumber ItemSize:(CGSize)itemSize;
 
 @end

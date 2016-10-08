@@ -8,7 +8,7 @@
 
 #import "VDDisplayViewCell.h"
 #import "VDCrosswiseList.h"
-
+#define VDCrossWiseListSize CGSizeMake(self.bounds.size.width, 30)
 @interface VDDisplayViewCell ()<UITableViewDelegate,UITableViewDataSource,VDCrosswiseListDelegate>
 
 @property (nonatomic, strong) VDCrosswiseList *headerView;
@@ -69,7 +69,7 @@
 - (VDCrosswiseList *)headerView {
     if (_headerView == nil) {
         
-        _headerView = [[VDCrosswiseList alloc] initWithItemNumber:5];
+        _headerView = [[VDCrosswiseList alloc] initWithItemNumber:5 Size:VDCrossWiseListSize];
         _headerView.VDCrosswiseListDelegate = self;
     }
     return _headerView;
